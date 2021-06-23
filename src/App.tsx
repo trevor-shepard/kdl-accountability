@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Helmet } from "react-helmet";
 import axios from "axios";
 import { KDLFormSubmitData, NatureOfTheOffense } from "./types";
 import styled from "styled-components";
@@ -8,7 +9,7 @@ import Loader from "react-loader-spinner";
 function App() {
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
-  const [submitted, setSubmitted] = useState(false)
+  const [submitted, setSubmitted] = useState(false);
   const [name, setName] = useState("");
   const [happen_to_you, setHappen_to_you] = useState<
     | "yes"
@@ -85,7 +86,7 @@ function App() {
   const handleSubmit = async (e: React.FormEvent) => {
     try {
       e.preventDefault();
-      setLoading(true)
+      setLoading(true);
 
       if (!happen_to_you)
         return setError("please specify who this occurred to");
@@ -116,29 +117,36 @@ function App() {
         follow_up,
       };
 
-      await axios
-        .post(
-          // @ts-ignore
-          process.env.REACT_APP_SHEET_API,
-          data
-        )
-        
-      setLoading(false)
-      setSubmitted(true)
+      await axios.post(
+        // @ts-ignore
+        process.env.REACT_APP_SHEET_API,
+        data
+      );
+
+      setLoading(false);
+      setSubmitted(true);
     } catch (error) {
       setError(error);
-      setLoading(false)
+      setLoading(false);
     }
   };
 
-  if (submitted) return (<AppContainer>
-    <CardContainer>
-      <h1>Thank you for your submission</h1>
-    </CardContainer>
-  </AppContainer>)
+  if (submitted)
+    return (
+      <AppContainer>
+        <CardContainer>
+          <h1>Thank you for your submission</h1>
+        </CardContainer>
+      </AppContainer>
+    );
 
   return (
     <AppContainer>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>KDL Accountability</title>
+        <link rel="canonical" href="https://kdl-accountability.vercel.app/" />
+      </Helmet>
       <CardContainer>
         <h1>KDL Accountability Incident Reporting Form</h1>
         <p>
@@ -687,7 +695,7 @@ const CardContainer = styled.div`
   padding-right: 2%;
   padding-bottom: 2%;
   box-sizing: border-box;
-  background-color: #d5d7f3;
+  background-color: #C4C4CE;
   border: 1px solid transparent;
 `;
 
