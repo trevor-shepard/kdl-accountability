@@ -1,0 +1,12 @@
+html * {
+  font-family: "SF Pro" !important;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+@font-face {
+  font-family: "SF Pro";
+  src: local("SF Pro"), url(./fonts/SFProDisplay-Regular.ttf) format("truetype");
+}
