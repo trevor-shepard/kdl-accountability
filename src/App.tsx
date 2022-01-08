@@ -13,8 +13,8 @@ function App() {
   const [name, setName] = useState("");
   const [happen_to_you, setHappen_to_you] = useState<
     | "yes"
-    | "no i was a bystander"
-    | "no I have the concent of the person who was harmed to submit this report"
+    | "no but i was a bystander"
+    | "no I have the consent of the person who was harmed to submit this report"
     | null
   >(null);
   const [email, setEmail] = useState("");
@@ -183,8 +183,8 @@ function App() {
           weighted more heavily than any other’s. Every member of the council
           has agreed to recuse themself from any process where their
           participation could undermine the outcome. If you don’t trust a member
-          of the RAC to participate ethically in your process, please contact
-          any other member of the council to let them know.
+          of the accountability council to participate ethically in your process, 
+          please contact any other member of the council to let them know.
         </p>
         <p>
           WHAT HAPPENS AFTER MY REPORT IS SUBMITTED? An council member will
@@ -599,9 +599,9 @@ function App() {
           <QuestionContainer>
             <Left>
               <QuestionLabel htmlFor="council_legal_agreement">
-                The RAC will not pursue legal action, however if you or someone
+                The accountability council will not pursue legal action, however if you or someone
                 else pursues legal action regarding this incident, it is
-                possible that communication with the RAC (including this report)
+                possible that communication with the accountability council (including this report)
                 could be subpoenaed under certain circumstances.
               </QuestionLabel>
             </Left>
