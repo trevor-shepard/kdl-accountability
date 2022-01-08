@@ -2,8 +2,8 @@ export interface KDLFormFields {
   name: string;
   happen_to_you:
     | "yes"
-    | "no i was a bystander"
-    | "no I have the concent of the person who was harmed to submit this report";
+    | "no but i was a bystander"
+    | "no I have the consent of the person who was harmed to submit this report";
   // how_would_you_like_the_council_to_contact_you:
   email: string;
   phone: string;
@@ -48,8 +48,8 @@ export interface KDLFormSubmitData {
   name: string;
   happen_to_you:
     | "yes"
-    | "no i was a bystander"
-    | "no I have the concent of the person who was harmed to submit this report";
+    | "no but i was a bystander"
+    | "no I have the consent of the person who was harmed to submit this report";
   // how_would_you_like_the_council_to_contact_you:
   email: string;
   phone: string;

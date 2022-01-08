@@ -126,7 +126,7 @@ function App() {
       setLoading(false);
       setSubmitted(true);
     } catch (error) {
-      setError(error);
+      setError(error as string);
       setLoading(false);
     }
   };
@@ -250,17 +250,17 @@ function App() {
                 <Option>
                   <input
                     type="checkbox"
-                    name="no i was a bystander"
-                    checked={happen_to_you === "no i was a bystander"}
+                    name="no but i was a bystander"
+                    checked={happen_to_you === "no but i was a bystander"}
                     onChange={(e) => {
                       if (e.currentTarget.checked) {
-                        setHappen_to_you("no i was a bystander");
+                        setHappen_to_you("no but i was a bystander");
                       } else {
                         setHappen_to_you(null);
                       }
                     }}
                   />
-                  <label htmlFor="no i was a bystander">
+                  <label htmlFor="no but i was a bystander">
                     no i was a bystander
                   </label>
                 </Option>
@@ -270,23 +270,23 @@ function App() {
                     type="checkbox"
                     checked={
                       happen_to_you ===
-                      "no I have the concent of the person who was harmed to submit this report"
+                      "no I have the consent of the person who was harmed to submit this report"
                     }
                     name={
-                      "no I have the concent of the person who was harmed to submit this report"
+                      "no I have the consent of the person who was harmed to submit this report"
                     }
                     onChange={(e) => {
                       if (e.currentTarget.checked) {
                         setHappen_to_you(
-                          "no I have the concent of the person who was harmed to submit this report"
+                          "no I have the consent of the person who was harmed to submit this report"
                         );
                       } else {
                         setHappen_to_you(null);
                       }
                     }}
                   />
-                  <label htmlFor="no I have the concent of the person who was harmed to submit this report">
-                    no I have the concent of the person who was harmed to submit
+                  <label htmlFor="no I have the consent of the person who was harmed to submit this report">
+                    no I have the consent of the person who was harmed to submit
                     this report
                   </label>
                 </Option>
