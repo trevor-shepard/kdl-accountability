@@ -205,6 +205,9 @@ function App() {
           are likely to be contacting them as part of the inquiry.
         </p>
         <p>
+          WHO SEES THE REPORTS? Anything submitted by this form goes directly to a secure file accessible only to members of the accountability council. The details of your report are confidential and will not be disclosed to anyone without your express permission. That said, it is possible that this report or any other communication with the accountability could be subpoenaed under certain circumstances.
+        </p>
+        <p>
           A step-by-step overview of the process is available here: Code of
           Conduct link
         </p>
@@ -213,7 +216,7 @@ function App() {
           <QuestionContainer>
             <Left>
               <Left>
-                <QuestionLabel htmlFor="name">name</QuestionLabel>
+                <QuestionLabel htmlFor="name">Name</QuestionLabel>
               </Left>
             </Left>
             <Right>
@@ -295,7 +298,7 @@ function App() {
           </QuestionContainer>
           <QuestionContainer>
             <Left>
-              <QuestionLabel htmlFor="email">email</QuestionLabel>
+              <QuestionLabel htmlFor="email">Email</QuestionLabel>
             </Left>
             <Right>
               <QuestionInput
@@ -309,7 +312,7 @@ function App() {
           </QuestionContainer>
           <QuestionContainer>
             <Left>
-              <QuestionLabel htmlFor="phone">phone</QuestionLabel>
+              <QuestionLabel htmlFor="phone">Phone</QuestionLabel>
             </Left>
 
             <Right>
@@ -503,7 +506,7 @@ function App() {
           <QuestionContainer>
             <Left>
               <QuestionLabel htmlFor="who_are_you_reporting">
-                who are you reporting
+                Who are you reporting
               </QuestionLabel>
             </Left>
             <Right>
@@ -520,7 +523,7 @@ function App() {
           <QuestionContainer>
             <Left>
               <QuestionLabel htmlFor="date_time_location">
-                date time location
+                Date time location
               </QuestionLabel>
             </Left>
             <Right>
@@ -536,7 +539,7 @@ function App() {
 
           <QuestionContainer>
             <Left>
-              <QuestionLabel htmlFor="bystanders">bystanders</QuestionLabel>
+              <QuestionLabel htmlFor="Bystanders">Bystanders</QuestionLabel>
             </Left>
             <Right>
               <QuestionInput
@@ -551,7 +554,7 @@ function App() {
 
           <QuestionContainer>
             <Left>
-              <QuestionLabel htmlFor="narrative">narrative</QuestionLabel>
+              <QuestionLabel htmlFor="narrative">Narrative</QuestionLabel>
             </Left>
             <Right>
               <QuestionTextArea
@@ -567,7 +570,7 @@ function App() {
           <QuestionContainer>
             <Left>
               <QuestionLabel htmlFor="desired_outcome">
-                desired outcome
+                Desired outcome
               </QuestionLabel>
             </Left>
             <Right>
@@ -583,7 +586,7 @@ function App() {
 
           <QuestionContainer>
             <Left>
-              <QuestionLabel htmlFor="background">background</QuestionLabel>
+              <QuestionLabel htmlFor="background">Background</QuestionLabel>
             </Left>
             <Right>
               <QuestionTextArea
